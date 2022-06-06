@@ -1,0 +1,26 @@
+﻿@model Kullanici
+
+<form asp-action="Index">
+    <label asp-for="UserName"></label>
+    <input asp-for="UserName" />
+    <span asp-validation-for="UserName"></span>
+    <br />
+    <label asp-for="Password"></label>
+    <input asp-for="Password" />
+    <span asp-validation-for="Password"></span>
+    <br />
+    <label asp-for="Password2"></label>
+    <input asp-for="Password2" />
+    <span asp-validation-for="Password2"></span>
+    <br />
+    <label asp-for="EmailAdress"></label>
+    <input asp-for="EmailAdress" />
+    <span asp-validation-for="EmailAdress"></span>
+    <br />
+    <input type="submit" value="Kayıt" />
+</form>
+
+<script src="~/lib/jquery/dist/jquery.js"></script>
+
+<script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>

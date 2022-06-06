@@ -1,0 +1,18 @@
+﻿@model Kullanici
+
+
+<form asp-action="Index">
+
+
+    @Html.ValidationSummary()
+
+    <label asp-for="UserName"></label>
+    <input asp-for="UserName" />
+    <span asp-validation-for="UserName"></span> <!--validation mesajı göstermek için kullanılır. Hangi Proper as-validation-for ile belirtilir-->
+    <br />
+    <label asp-for="Password"></label>
+    <input asp-for="Password" />
+    <span asp-validation-for="Password"></span>
+    <br />
+    <input type="submit" value="Giriş Yap" />
+</form>
